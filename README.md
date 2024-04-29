@@ -2,11 +2,13 @@
 
 인공지능(openai의 API)을 사용하여 텔레그램 챗봇을 만드는 연습을 합니다.
 
-Telegram API: <https://github.com/python-telegram-bot/python-telegram-bot/wiki/Extensions---Your-first-Bot>
+Telegram API: <https://github.com/python-telegram-bot/python-telegram-bot/>
 
 OpenAI API: <https://platform.openai.com/docs/api-reference/chat>
 
-코드는 Branch별로 구분되어 있습니다.
+OpenAI API 연습하기 GitHub: <https://github.com/just-record/openai_api/tree/main>
+
+코드는 **Branch별로** 구분되어 있습니다.
 
 ## 설치
 
