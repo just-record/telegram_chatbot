@@ -1,29 +1,31 @@
-# Telegram API - 첫 번째 Bot 만들기
+# Telegram Chatbot - openai의 API 연동
 
-<https://github.com/python-telegram-bot/python-telegram-bot/wiki/Extensions---Your-first-Bot>
+인공지능(openai의 API)을 사용하여 텔레그램 챗봇을 만드는 연습을 합니다.
 
-## `Application` Object
+Telegram API: <https://github.com/python-telegram-bot/python-telegram-bot/wiki/Extensions---Your-first-Bot>
 
-`build_application.py`: Application 객체를 생성합니다.
+OpenAI API: <https://platform.openai.com/docs/api-reference/chat>
 
-이 프로그램은 Application 객체를 생성하고 바로 종료합니다. 실제로 Application 객체만으로는 아무것도 할 수 없습니다.
+## OpenAI API
 
-## `/start` Command
+OpenAI API의 기능: <https://github.com/just-record/openai_api>
 
-`start_command.py`: `CommandHandler`를 이용 하여 `/start` 명령어를 처리합니다.
+`.env` 파일에 API 키를 저장합니다.
 
-서비스를 종료 할 때 까지 계속 실행되며, 사용자가 `/start` 명령어를 입력하면 `"I'm a bot, please talk to me!"`를 답변합니다. 이 프로그램은 `/start` 명령어만 처리 할 수 있습니다.
+```shell
+OPENAI_API_KEY=your_api_key
+```
 
-## `Message`에 답변하기
+## 답변 생성
 
-`echo_bot.py`: `MessageHandler`를 이용하여 사용자가 입력한 메시지를 처리합니다.
+`main_ai_answer.py`: AI를 활용하여 채팅 메시지에 답변을 합니다. 이전 대화를 기억 하지는 못합니다.
 
-사용자가 입력한 메시지를 그대로 답변합니다.
+## 답변 기능 추가
 
-## 인자가 있는 `Command` 처리하기
+`main_ai_english.py`: 채팅 메시지를 영어로 번역합니다.
 
-`cap_bot.py`: `CommandHandler`를 이용하여 `/caps` 명령어를 처리합니다.
+OpenAI API의 System content를 사용하여 답변에 특정 기능을 부여합니다.
 
-`/caps` 명령어 뒤에 입력한 문자열을 대문자로 변환하여 답변합니다.
+## 이미지 생성
 
-**`InlineQueryHandler`** 은 다음에 연습할 예정입니다.
+`main_ai_image.py`: OpenAI API의 이미지 생성 기능을 사용하여 이미지를 생성합니다.
