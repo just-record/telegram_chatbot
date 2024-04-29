@@ -1,7 +1,5 @@
 # Telegram API - 첫 번째 Bot 만들기
 
-Pure Telegram Bot API를 사용하기 연습
-
 <https://github.com/python-telegram-bot/python-telegram-bot/wiki/Extensions---Your-first-Bot>
 
 ## `Application` Object
