@@ -1,4 +1,4 @@
-# Telegram Chatbot - openai의 API 연동
+# Telegram Chatbot - OpenAI API
 
 인공지능(openai의 API)을 사용하여 텔레그램 챗봇을 만드는 연습을 합니다.
 
@@ -6,26 +6,49 @@ Telegram API: <https://github.com/python-telegram-bot/python-telegram-bot/wiki/E
 
 OpenAI API: <https://platform.openai.com/docs/api-reference/chat>
 
-## OpenAI API
+코드는 Branch별로 구분되어 있습니다.
 
-OpenAI API의 기능: <https://github.com/just-record/openai_api>
+## 설치
 
-`.env` 파일에 API 키를 저장합니다.
-
-```shell
-OPENAI_API_KEY=your_api_key
+```bash
+pip install -r requirements.txt
 ```
 
-## 답변 생성
+`.env` 파일을 생성하고 아래 내용을 추가합니다.
 
-`main_ai_answer.py`: AI를 활용하여 채팅 메시지에 답변을 합니다. 이전 대화를 기억 하지는 못합니다.
+```bash
+TELEGRAM_BOT_TOKEN=YOUR_TELEGRAM_BOT_TOKEN
+OPENAI_API_KEY=YOUR_OPENAI_API_KEY
+```
 
-## 답변 기능 추가
+`python file`을 실행합니다.
 
-`main_ai_english.py`: 채팅 메시지를 영어로 번역합니다.
+```bash
+python main_ai_answer.py
+```
 
-OpenAI API의 System content를 사용하여 답변에 특정 기능을 부여합니다.
+## 01.pure_telegram_bot_api
 
-## 이미지 생성
+제일 먼저 Pure Telegram Bot API를 사용하여 텔레그램 메시지를 받고 보내는 방법을 연습합니다.
 
-`main_ai_image.py`: OpenAI API의 이미지 생성 기능을 사용하여 이미지를 생성합니다.
+## 02.my_first_chatbot
+
+Telegram Bot API를 사용하여 간단한 챗봇을 만드는 방법을 연습합니다.
+
+- Apllication 객체 생성
+- 특정 명령어 처리 하기
+- 메시지 보내면 동일한 메시지로 응답하기
+
+## 03.telegram_chatbot_chatGPT
+
+인공지능(OpenAI의 API)을 사용하여 자동으로 답변 하는 방법을 연습합니다.
+
+- 자동 답변하기
+- 영어로 번역하기
+- 이미지 생성 하기
+
+## TODO
+
+- [ ] 이전 대화 기억하기
+- [ ] 이미지(음성 등)를 전송하기(다운로드 받기)
+- [ ] 이미지(음성 등)를 업로드 하여 질의 하기
