@@ -27,3 +27,5 @@ Pure Telegram Bot API를 사용하기 연습
 `cap_bot.py`: `CommandHandler`를 이용하여 `/caps` 명령어를 처리합니다.
 
 `/caps` 명령어 뒤에 입력한 문자열을 대문자로 변환하여 답변합니다.
+
+**`InlineQueryHandler`** 은 다음에 연습할 예정입니다.
