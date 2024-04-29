@@ -8,7 +8,7 @@ OpenAI API: <https://platform.openai.com/docs/api-reference/chat>
 
 ## OpenAI API
 
-OpenAI API의 기능: <https://github.com/just-record/openai_api>
+OpenAI API 연습하기: <https://github.com/just-record/openai_api>
 
 `.env` 파일에 API 키를 저장합니다.
 
