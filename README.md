@@ -18,14 +18,28 @@ OPENAI_API_KEY=your_api_key
 
 ## 답변 생성
 
-`main_ai_answer.py`: AI를 활용하여 채팅 메시지에 답변을 합니다. 이전 대화를 기억 하지는 못합니다.
+OpenAI API를 활용하여 채팅 메시지에 답변을 합니다. 이전 대화를 기억 하지는 못합니다.
+
+`main_ai_answer.py`
 
 ## 답변 기능 추가
 
-`main_ai_english.py`: 채팅 메시지를 영어로 번역합니다.
+OpenAI API를 활용하여 채팅 메시지를 영어로 번역합니다.
 
-OpenAI API의 System content를 사용하여 답변에 특정 기능을 부여합니다.
+- `main_ai_english.py`: Message Handler 사용 - 메시지를 무조건 영어로 번역합니다.
+- `main_ai_english_command.py`: Command Handler 사용 - `/translation` 명령어를 사용하여 번역합니다.
+  - `/translation 안녕하세요` 로 입력하면 영어로 번역합니다. 일반 메시지는 일반적인 답변을 합니다.
 
 ## 이미지 생성
 
-`main_ai_image.py`: OpenAI API의 이미지 생성 기능을 사용하여 이미지를 생성합니다.
+OpenAI API를 활용하여 이미지를 생성합니다.
+
+- `main_ai_image.py`: Message Handler 사용 - 메시지에 해당하는 이미지를 무조건 생성합니다.
+- `main_ai_image_command.py`: Command Handler 사용 - `/generate_image` 명령어를 사용하여 이미지를 생성합니다.
+  - `/generate_image cat` 로 입력하면 고양이 이미지를 생성합니다. 일반 메시지는 일반적인 답변을 합니다.
+
+## 이미지를 업로드하고 질의 하기
+
+OpenAI API를 활용하여 이미지와 그에 관한 질의를 합니다.
+
+- `main_ai_image_query.py`: Message Handler 사용 - 업로드 하는 이미지의 caption에 입력한 내용을 질의 합니다.

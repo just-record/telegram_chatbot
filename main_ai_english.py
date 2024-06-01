@@ -34,7 +34,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def answer(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.message.text
     client = get_openai_client()
-    model = "gpt-3.5-turbo-0613"
+    model = "gpt-4o"
     messages = [{"role": "user", "content": query}]
     # 영어로 번역하라는 시스템 메시지 추가
     add_system_content(messages, "Please translate it into English.")
